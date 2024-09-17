@@ -8,5 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Roadmap extends Model
 {
     use HasFactory;
-    protected $fillable = ['title','description'];
+    protected $guarded = [];
+
+    //a funtion to grap the start node and travser the graph
 }
